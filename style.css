@@ -121,9 +121,11 @@ footer {
   border-right: 1px solid #ddd;
 }
 
+/* When opened */
 .sidebar.open {
   left: 0;
 }
+
 
 .close-btn {
   align-self: flex-end;
