@@ -9,3 +9,8 @@ menuBtn.onclick = () => {
 closeSidebar.onclick = () => {
   sidebar.classList.remove("open");
 };
+
+document.querySelectorAll("#sidebar a").forEach(link => {
+  link.onclick = () => sidebar.classList.remove("open");
+});
+
