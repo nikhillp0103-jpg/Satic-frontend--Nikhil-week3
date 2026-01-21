@@ -252,3 +252,153 @@ body {
     color: #1976d2;
     border: 2px solid #fff;
 }
+
+.cta-section .cta-button:hover {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+/* Footer Placeholder (enhanced) */
+.footer {
+    background: linear-gradient(135deg, #424242 0%, #616161 100%);
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsiveness (enhanced for tablets and mobile) */
+@media (max-width: 1024px) {
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+    
+    .services-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 0; /* More padding for touch */
+    }
+    
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; /* Space between logo and nav */
+    }
+    
+    .logo h1 {
+        font-size: 2rem; /* Larger for mobile */
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 0;
+        gap: 15px; /* Better spacing */
+    }
+    
+    .navbar ul li {
+        margin: 0;
+    }
+    
+    .navbar ul li a {
+        font-size: 1.2rem; /* Larger touch targets */
+        padding: 10px 20px; /* Easier to tap */
+        display: block;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle background for links */
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: none; /* Remove lift for mobile */
+    }
+    
+    .hero {
+        padding: 100px 20px; /* Adjusted for mobile */
+    }
+    
+    .hero-heading {
+        font-size: 2.5rem; /* Slightly larger for impact */
+    }
+    
+    .hero-subheading {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-button {
+        padding: 20px 50px; /* Bigger button for touch */
+        font-size: 1.2rem;
+    }
+    
+    .section {
+        padding: 60px 20px; /* Reduced but organized padding */
+    }
+    
+    .section h2 {
+        font-size: 2rem; /* Readable size */
+        margin-bottom: 40px;
+    }
+    
+    .about .section-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px; /* Organized spacing */
+        gap: 30px;
+    }
+    
+    .about .text-content h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .placeholder-box {
+        height: 200px; /* Shorter for mobile */
+    }
+    
+    .services-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Single column for organization */
+        gap: 20px;
+    }
+    
+    .service-item,
+    .testimonial-item {
+        padding: 25px 20px; /* Adjusted for mobile */
+        border-radius: 12px; /* Softer corners */
+    }
+    
+    .cta-section {
+        padding: 80px 20px;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-section p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-section .cta-button {
+        padding: 18px 40px;
+        font-size: 1.1rem;
+    }
+    
+    .footer {
+        padding: 40px 20px;
+    }
+    
+    .footer p {
+        font-size: 1.1rem;
+    }
+}
