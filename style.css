@@ -360,3 +360,33 @@ body {
     .cta-button { padding: 14px 30px; font-size: 1rem; }
     .section h2 { font-size: 1.6rem; }
 }
+
+
+.stats {
+    display: flex;
+    gap: 30px;
+    margin: 25px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.stats span {
+    background: #e3f2fd;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #bbdefb;
+}
+
+.contact-details {
+    margin: 25px 0;
+    font-size: 1.1rem;
+}
+
+.contact-details p {
+    margin: 8px 0;
+}
+
+cite strong {
+    color: #1976d2;
+}
