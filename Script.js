@@ -1,18 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.getElementById('hamburger');
-  const nav = document.querySelector('.nav-menu');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => nav.classList.remove('active'));
-  });
-
-  window.addEventListener('resize', () => {
-    if(window.innerWidth > 769){
-      nav.classList.remove('active');
-    }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    const target = document.querySelector(this.getAttribute("href"));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: "smooth" });
   });
 });
