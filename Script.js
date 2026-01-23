@@ -1,59 +1,74 @@
-// SIDEBAR & OVERLAY TOGGLE
-const hamburger = document.getElementById("hamburger");
-const sidebar = document.getElementById("sidebar");
-const overlay = document.getElementById("overlay");
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
 
-hamburger.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  overlay.style.opacity = sidebar.classList.contains("open") ? "1" : "0";
-  overlay.style.visibility = sidebar.classList.contains("open") ? "visible" : "hidden";
-});
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
 
-// Close sidebar on overlay click
-overlay.addEventListener("click", () => {
-  sidebar.classList.remove("open");
-  overlay.style.opacity = "0";
-  overlay.style.visibility = "hidden";
-});
+    // Close menu on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.header-wrapper') && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
 
-// Close sidebar when clicking a link
-document.querySelectorAll(".sidebar a").forEach(link => {
-  link.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-    overlay.style.opacity = "0";
-    overlay.style.visibility = "hidden";
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      if (navLinks && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
   });
-});
 
-// Counter Animation
-const counters = document.querySelectorAll(".counter");
-const speed = 100;
-counters.forEach(counter => {
-  const update = () => {
-    const target = +counter.getAttribute("data-target");
-    const value = +counter.innerText;
-    const inc = target / speed;
-    if(value < target){
-      counter.innerText = Math.ceil(value + inc);
-      setTimeout(update,18);
-    } else { counter.innerText = target; }
-  };
-  update();
-});
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0) translateX(0)';
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
 
-// FAQ Accordion
-document.querySelectorAll(".faq-item button").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const p = btn.nextElementSibling;
-    p.style.display = p.style.display === "block" ? "none" : "block";
+  document.querySelectorAll('.service-card, .testimonial-card, .hero-text, .hero-visual').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    observer.observe(el);
   });
-});
 
-// Dark/Light Mode
-const themeToggle = document.getElementById("themeToggle");
-let dark = false;
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  themeToggle.innerText = dark ? "🌙" : "☀️";
-  dark = !dark;
+  // Header scroll effect
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const header = document.querySelector('.site-header');
+        const scrolled = window.scrollY > 100;
+        if (scrolled) {
+          header.style.background = 'linear-gradient(135deg, rgba(184,134,11,0.95), rgba(255,215,0,0.9))';
+          header.style.backdropFilter = 'blur(20px)';
+        } else {
+          header.style.background = 'linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #ffd700 100%)';
+          header.style.backdropFilter = 'blur(10px)';
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
 });
