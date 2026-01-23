@@ -1,133 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>THE EMPIRE — Digital Solutions</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE EMPIRE - Digital Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="container nav-flex">
-    <h2 class="logo">THE EMPIRE</h2>
+    <div class="container">
+        <h1 class="logo">THE EMPIRE</h1>
 
-    <nav class="nav" id="navMenu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div class="hamburger" id="hamburgerBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
-  </div>
 </header>
 
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Digital Services For Modern Brands</h1>
-      <p>We help brands build powerful digital presence through design, development, and marketing — optimized for growth.</p>
-      <a href="#contact" class="btn-primary">Get Started</a>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-content" data-animate="fade-in">
+        <h2>We Build Digital Experiences</h2>
+        <p>Professional services for brands, startups & businesses.</p>
+        <button class="btn">Get Started</button>
     </div>
+</section>
 
-    <div class="hero-visual">
-      <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=900" alt="tech">
+<!-- SERVICES -->
+<section class="services" id="services">
+    <h2 class="section-title" data-animate="slide-up">Our Services</h2>
+    <div class="service-grid">
+        <div class="card" data-animate="fade-in">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Custom responsive websites & business web platforms.</p>
+        </div>
+        <div class="card" data-animate="fade-in">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h3>Digital Marketing</h3>
+            <p>Grow your brand with strategy, ads & SEO optimization.</p>
+        </div>
+        <div class="card" data-animate="fade-in">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h3>Brand Designing</h3>
+            <p>Logo, brand kit, visual identity & social media creatives.</p>
+        </div>
     </div>
-  </div>
 </section>
 
-<section id="about" class="section">
-  <div class="container center">
-    <h2>About Us</h2>
-    <p class="section-desc">We are a digital agency helping companies scale using strategic design, development and marketing services.</p>
-  </div>
-</section>
-
-<section id="services" class="section">
-  <div class="container center">
-    <h2>Our Services</h2>
-    <div class="grid-4 services-grid">
-      <div class="card service-card"><div class="icon">💼</div><h3>Consulting</h3><p>Business strategy & performance scaling.</p></div>
-      <div class="card service-card"><div class="icon">🖥️</div><h3>Development</h3><p>Modern web & software solutions.</p></div>
-      <div class="card service-card"><div class="icon">📈</div><h3>Brand Strategy</h3><p>Identity, positioning & narrative.</p></div>
-      <div class="card service-card"><div class="icon">📣</div><h3>Marketing</h3><p>Campaigns that convert & deliver ROI.</p></div>
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2 class="section-title" data-animate="slide-up">Latest Projects</h2>
+    <div class="project-grid">
+        <div class="project-card" data-animate="zoom-in">Tech Dashboard UI</div>
+        <div class="project-card" data-animate="zoom-in">Branding Identity Kit</div>
+        <div class="project-card" data-animate="zoom-in">Corporate Landing Page</div>
     </div>
-  </div>
 </section>
 
-<section id="process" class="section">
-  <div class="container center">
-    <h2>Our Process</h2>
-    <div class="steps">
-      <div class="step">01 — Research</div>
-      <div class="step">02 — Design</div>
-      <div class="step">03 — Build</div>
-      <div class="step">04 — Test & Launch</div>
-    </div>
-  </div>
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="section-title" data-animate="slide-up">About Us</h2>
+    <p data-animate="fade-in">We specialize in building branded digital products with clean UI and powerful digital strategies.</p>
 </section>
 
-<section id="pricing" class="section">
-  <div class="container center">
-    <h2>Pricing Plans</h2>
-    <div class="pricing-box">
-      <div class="plan">
-        <h3>Starter</h3>
-        <p>Best for small businesses</p>
-        <h4>$199</h4>
-        <ul><li>Single Page</li><li>SEO Setup</li><li>Responsive</li></ul>
-      </div>
-      <div class="plan middle">
-        <h3>Business</h3>
-        <p>Ideal for scaling companies</p>
-        <h4>$499</h4>
-        <ul><li>Multiple Pages</li><li>Branding Help</li><li>Marketing Setup</li></ul>
-      </div>
-      <div class="plan">
-        <h3>Enterprise</h3>
-        <p>Advanced custom solutions</p>
-        <h4>$999+</h4>
-        <ul><li>Custom Development</li><li>Advanced Strategy</li><li>Support</li></ul>
-      </div>
-    </div>
-  </div>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title" data-animate="slide-up">Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button class="btn">Send Message</button>
+    </form>
 </section>
 
-<section id="testimonials" class="section">
-  <div class="container center">
-    <h2>What Clients Say</h2>
-    <div class="grid-3">
-      <div class="tcard"><p>"Our conversions increased instantly after redesign."</p><h5>- Agency</h5></div>
-      <div class="tcard"><p>"Delivered professional quality on time."</p><h5>- Startup</h5></div>
-      <div class="tcard"><p>"Improved our brand and online presence."</p><h5>- Retail</h5></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="cta">
-  <div class="container center">
-    <h2>Ready to Start?</h2>
-    <p>Let’s work together on your next digital project.</p>
-    <a href="mailto:contact@demo.com" class="btn-primary">Contact Us</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div><h4>THE EMPIRE</h4><p>Modern Digital Solutions</p></div>
-    <div><h4>Links</h4><a href="#about">About</a><a href="#services">Services</a><a href="#pricing">Pricing</a></div>
-    <div><h4>Contact</h4><p>Email: contact@demo.com</p><p>Phone: +91 00000 00000</p></div>
-  </div>
-  <div class="footer-bottom"><p>© 2026 THE EMPIRE. All rights reserved.</p></div>
+<footer>
+    <p>© 2026 THE EMPIRE — All Rights Reserved.</p>
 </footer>
 
 <script src="script.js"></script>
