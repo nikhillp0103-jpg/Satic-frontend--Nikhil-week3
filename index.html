@@ -1,143 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EMPEROR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE EMPIRE — Digital Solutions</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="site-header">
-    <div class="header-wrapper">
-      <div class="logo-section">
-        <div class="logo">THE EMPIRE</div>
-      </div>
-      <nav class="navigation">
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Solutions</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="action-buttons">
-        <a href="#services" class="cta-btn cta-primary">Launch Project</a>
-        <a href="#contact" class="cta-btn cta-secondary">Free Consult</a>
-        <button class="menu-toggle" aria-label="Toggle navigation menu" id="menuToggle">☰</button>
-      </div>
-    </div>
-  </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home" class="hero-section">
-    <div class="container hero-wrapper">
-      <div class="hero-text animate-fade-in">
-        <h1>AI-Powered Future</h1>
-        <p>Next-generation intelligence solutions that transform businesses and redefine possibilities.</p>
-        <div class="hero-buttons">
-          <a href="#services" class="btn primary">Discover Solutions</a>
-          <a href="#about" class="btn secondary">Our Vision</a>
-        </div>
-      </div>
-      <div class="hero-visual animate-slide-in">
-        <img src="https://images.unsplash.com/photo-1725328879177-5c9b91e971b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Neural Network" class="hero-image">
-      </div>
-    </div>
-  </section>
+<!-- HEADER -->
+<header class="header glass">
+  <div class="container nav-flex">
+    <h2 class="logo">THE EMPIRE</h2>
 
-  <!-- ===== SERVICES SECTION ===== -->
-  <section id="services" class="services-section">
-    <div class="container">
-      <h2 class="section-title">Intelligent Solutions</h2>
-      <div class="services-grid">
-        <div class="service-card animate-card-hover">
-          <div class="service-icon">🧠</div>
-          <h3>AI Development</h3>
-          <p>Custom machine learning models and neural networks for enterprise automation.</p>
-        </div>
-        <div class="service-card animate-card-hover">
-          <div class="service-icon">🔗</div>
-          <h3>API Integration</h3>
-          <p>Seamless AI integration into existing systems and workflows.</p>
-        </div>
-        <div class="service-card animate-card-hover">
-          <div class="service-icon">📊</div>
-          <h3>Predictive Analytics</h3>
-          <p>Advanced forecasting and data insights for strategic decision making.</p>
-        </div>
-        <div class="service-card animate-card-hover">
-          <div class="service-icon">🤖</div>
-          <h3>Automation Bots</h3>
-          <p>Intelligent agents that handle repetitive tasks 24/7.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Desktop Nav -->
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
 
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="about" class="about-section">
-    <div class="container about-wrapper">
-      <div class="about-text animate-fade-in">
-        <h2>Leading AI Innovation</h2>
-        <p>Neuronet pioneers artificial intelligence solutions for the world's most ambitious companies.</p>
-        <ul>
-          <li>500+ AI deployments worldwide</li>
-          <li>98% client retention rate</li>
-          <li>Patented neural architectures</li>
-        </ul>
-      </div>
-      <div class="about-visual animate-slide-in">
-        <img src="https://images.unsplash.com/photo-1683474278821-b5eb0f9f60d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Research Lab" class="team-image">
-      </div>
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="testimonials-section">
-    <div class="container">
-      <h2 class="section-title">Proven Results</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card animate-card-hover">
-          <p>"Neuronet's AI reduced our operational costs by 67% while increasing accuracy to 99.2%."</p>
-          <cite>- Dr. Elena Vasquez, Chief Data Officer</cite>
-        </div>
-        <div class="testimonial-card animate-card-hover">
-          <p>"From prototype to production in 6 weeks. Their predictive models are generating $2M/month."</p>
-          <cite>- Raj Patel, VP Engineering</cite>
-        </div>
-        <div class="testimonial-card animate-card-hover">
-          <p>"Best AI partner we've worked with. Transformed our entire customer service operation."</p>
-          <cite>- Sophia Chen, CEO & Founder</cite>
-        </div>
-      </div>
+<!-- SIDEBAR MOBILE -->
+<div class="overlay" id="overlay"></div>
+<div class="sidebar" id="sidebar">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero glass">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>We Build Digital Products That Help Businesses Grow</h1>
+      <p>Empowering startups, agencies and enterprises with technology, strategy and design.</p>
+      <a href="#contact" class="btn-primary">Start Your Project</a>
     </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="cta-section" id="contact">
-    <div class="container cta-wrapper">
-      <h2>Transform Your Business</h2>
-      <p>Schedule a free AI strategy session with our experts today.</p>
-      <a href="mailto:hello@neuronet.ai" class="btn primary large">Book Consultation</a>
+    <div class="hero-visual">
+      <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Tech">
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-wrapper">
-      <div class="footer-left">
-        <p>&copy; 2026 THE EMPEROR. All rights reserved.</p>
-      </div>
-      <div class="footer-right">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Support</a>
-      </div>
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container center">
+    <h2>Our Core Services</h2>
+    <p class="sub">End-to-end solutions crafted for performance and impact.</p>
+    <div class="grid-4 services-grid">
+      <div class="glass card"><h3>Web Development</h3><p>Full stack web apps with modern UI & fast performance.</p></div>
+      <div class="glass card"><h3>Brand Strategy</h3><p>Identity systems, messaging and positioning.</p></div>
+      <div class="glass card"><h3>SEO & Marketing</h3><p>Organic growth, PPC campaigns and analytics.</p></div>
+      <div class="glass card"><h3>Product UI/UX</h3><p>Human centered design for delightful experiences.</p></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- NUMBERS COUNTER -->
+<section class="numbers section glass">
+  <div class="container grid-4 center">
+    <div><h2 class="counter" data-target="120">0</h2><p>Projects Delivered</p></div>
+    <div><h2 class="counter" data-target="45">0</h2><p>Clients Worldwide</p></div>
+    <div><h2 class="counter" data-target="98">0</h2><p>Satisfaction %</p></div>
+    <div><h2 class="counter" data-target="10">0</h2><p>Countries</p></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container center">
+    <h2>Recent Projects</h2>
+    <div class="grid-3 projects-grid">
+      <div class="glass pcard"><img src="https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&w=800"><h4>Finance Platform</h4></div>
+      <div class="glass pcard"><img src="https://images.pexels.com/photos/3730763/pexels-photo-3730763.jpeg?auto=compress&w=800"><h4>Brand Website</h4></div>
+      <div class="glass pcard"><img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&w=800"><h4>E-Commerce UI</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <div class="container center">
+    <h2>Pricing Plans</h2>
+    <div class="grid-3 price-grid">
+      <div class="glass price"><h3>Starter</h3><h2>$199</h2><p>Landing Page • Basic SEO • Support</p><a class="btn-primary" href="#contact">Choose</a></div>
+      <div class="glass price featured"><h3>Business</h3><h2>$499</h2><p>5 Pages • SEO • Analytics • Strategy</p><a class="btn-primary" href="#contact">Choose</a></div>
+      <div class="glass price"><h3>Enterprise</h3><h2>$999</h2><p>Custom Build • Growth • Integrations</p><a class="btn-primary" href="#contact">Choose</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container center">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div class="faq-item"><button>Do you support custom projects?</button><p>Yes! We specialize in fully custom digital products.</p></div>
+      <div class="faq-item"><button>How long does delivery take?</button><p>Most projects are delivered within 2-6 weeks.</p></div>
+      <div class="faq-item"><button>Do you offer support?</button><p>We provide extended support & maintenance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / Contact -->
+<section id="contact" class="cta glass center">
+  <h2>Work With Us</h2>
+  <p>Let's build something impactful together.</p>
+  <a href="mailto:contact@demo.com" class="btn-primary">Contact Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer glass">
+  <div class="container footer-grid">
+    <div><h4>THE EMPIRE</h4><p>Digital solutions for modern businesses.</p></div>
+    <div><h4>Links</h4><a href="#services">Services</a><a href="#projects">Projects</a><a href="#pricing">Pricing</a></div>
+    <div><h4>Follow</h4><p>Twitter • Dribbble • LinkedIn</p></div>
+  </div>
+  <div class="footer-bottom">© 2026 — All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
