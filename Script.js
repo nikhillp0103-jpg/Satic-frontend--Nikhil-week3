@@ -1,13 +1,6 @@
-const hamburger=document.getElementById("hamburger");
-const nav=document.getElementById("nav");
+const nav = document.getElementById("nav");
+const ham = document.getElementById("hamburger");
 
-hamburger.onclick=()=>nav.classList.toggle("active");
-
-const reveals=document.querySelectorAll(".reveal");
-window.addEventListener("scroll",()=>{
-    reveals.forEach(e=>{
-        if(e.getBoundingClientRect().top < window.innerHeight-100){
-            e.classList.add("active");
-        }
-    });
+ham.addEventListener("click", ()=> {
+  nav.classList.toggle("show");
 });
