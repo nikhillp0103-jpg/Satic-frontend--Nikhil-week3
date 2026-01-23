@@ -1,126 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Professional Solutions</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Empire — Digital Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
 <header class="header">
-  <div class="container nav-flex">
-    <h2 class="logo">THE EMPIRES</h2>
-
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="logo">Tech Empire</div>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
     </div>
-
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav" id="nav">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </nav>
-  </div>
 </header>
 
-<section id="home" class="hero section-gradient">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Digital Services For Modern Business Growth</h1>
-      <p>We help companies scale with strategy, development & design — built for performance and success.</p>
-      <a href="#contact" class="btn-primary">Get Started</a>
+<section class="hero reveal">
+    <div class="hero-content">
+        <h1>We Build Future-Ready Digital Experiences</h1>
+        <p>From websites to digital products, we transform ideas into real-world solutions.</p>
+        <button class="btn">Get Started</button>
     </div>
-    <div class="hero-visual">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&w=900&q=60" alt="">
-    </div>
-  </div>
 </section>
 
-<section id="about" class="section white-bg">
-  <div class="container two-grid">
-    <div>
-      <h2>About Us</h2>
-      <p>We are a team dedicated to building meaningful digital experiences through strategy, development and marketing.</p>
-      <a href="#services" class="link">Explore Services →</a>
+<section class="services reveal">
+    <h2>What We Do</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Responsive & modern websites built with latest technologies.</p>
+        </div>
+        <div class="card">
+            <h3>Branding</h3>
+            <p>Create a strong visual identity that stands out in the market.</p>
+        </div>
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Human-centered design with functional user experiences.</p>
+        </div>
+        <div class="card">
+            <h3>SEO & Marketing</h3>
+            <p>Boost organic reach & grow your digital presence.</p>
+        </div>
     </div>
-    <div class="img-box">
-      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&w=900&q=60" alt="">
-    </div>
-  </div>
 </section>
 
-<section id="services" class="section section-gradient">
-  <div class="container center">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="card service-card"><div class="icon">💼</div><h3>Consulting</h3><p>Strategic business planning & guidance.</p></div>
-      <div class="card service-card"><div class="icon">🖥️</div><h3>Development</h3><p>Modern digital & software solutions.</p></div>
-      <div class="card service-card"><div class="icon">📈</div><h3>Brand Strategy</h3><p>Create strong identity & positioning.</p></div>
-      <div class="card service-card"><div class="icon">📣</div><h3>Marketing</h3><p>Campaigns that drive conversions.</p></div>
-    </div>
-  </div>
+<section class="cta reveal">
+    <h2>Ready to Start a Project?</h2>
+    <p>Let's build something impactful together.</p>
+    <button class="btn">Contact Us</button>
 </section>
 
-<section id="why" class="section white-bg">
-  <div class="container center">
-    <h2>Why Choose Us?</h2>
-    <div class="why-grid">
-      <div class="why-item"><span class="check">✔</span><p>Professional multi-disciplinary team.</p></div>
-      <div class="why-item"><span class="check">✔</span><p>Performance-driven services.</p></div>
-      <div class="why-item"><span class="check">✔</span><p>Reliable communication & delivery.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="section section-gradient">
-  <div class="container center">
-    <h2>Client Testimonials</h2>
-    <div class="testimonials-grid">
-      <div class="tcard"><p>"Amazing results & consistent updates!"</p><h5>- Founder, Startup</h5></div>
-      <div class="tcard"><p>"Delivered more than expected."</p><h5>- CEO, Agency</h5></div>
-      <div class="tcard"><p>"Great experience! Quality output."</p><h5>- Director, Tech Firm</h5></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="cta section-gradient">
-  <div class="container center">
-    <h2>Ready to work together?</h2>
-    <p>Let's collaborate & build something valuable.</p>
-    <a href="mailto:contact@demo.com" class="btn-primary">Contact Us</a>
-  </div>
-</section>
-
-<footer class="footer white-bg">
-  <div class="container footer-grid">
-    <div>
-      <h4>Company</h4>
-      <p>Digital services for modern businesses.</p>
-    </div>
-    <div>
-      <h4>Links</h4>
-      <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <p>Email: contact@demo.com</p>
-      <p>Phone: +91 00000 00000</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 THE EMPIRE. All rights reserved.</p>
-  </div>
+<footer class="footer">
+    <p>© 2026 Tech Empire — All Rights Reserved</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
