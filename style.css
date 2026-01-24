@@ -476,3 +476,11 @@ body {
     text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
   }
 }
+.hero-img img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
