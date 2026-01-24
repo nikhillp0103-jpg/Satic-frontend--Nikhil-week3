@@ -2,72 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>THE EMPIRE — Web Showcase</title>
+    <title>THE EMPIRE — Premium Showcase</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-    <div class="header-content">
+<header class="nav">
+    <div class="nav-inner">
         <div class="brand">THE EMPIRE</div>
 
-        <nav id="navMenu" class="menu">
-            <a href="#home">Overview</a>
-            <a href="#features">Highlights</a>
-            <a href="#contact" class="cta-btn">Reach Us</a>
+        <nav id="menu" class="menu">
+            <a href="#home" class="link">Home</a>
+            <a href="#about" class="link">About</a>
+            <a href="#features" class="link">Features</a>
+            <a href="#stats" class="link">Stats</a>
+            <a href="#contact" class="primary-btn">Contact</a>
         </nav>
 
-        <div id="burger" class="burger">☰</div>
+        <div id="hamburger" class="hamburger">☰</div>
     </div>
 </header>
 
-<section class="search-area">
-    <input type="text" placeholder="Type to search...">
-    <button>Go</button>
+<section id="home" class="hero reveal">
+    <h1 class="hero-title">Premium Digital Showcase</h1>
+    <p class="hero-sub">High-end static web experience built with HTML, CSS & JS</p>
+    <button class="cta-main">Explore More</button>
 </section>
 
-<section id="home" class="hero-section">
-    <h1>Modern Static Showcase</h1>
-    <p>Web presentation built using HTML, CSS & JS</p>
+<section class="reveal search">
+    <input type="text" placeholder="Search here...">
+    <button class="search-btn">Search</button>
 </section>
 
-<section id="features" class="features-grid">
+<section id="about" class="about reveal">
+    <h2>About Us</h2>
+    <p>THE EMPIRE delivers premium visuals and strong brand presence. Our web showcase highlights modern UI practices tailored for professional exposure.</p>
+</section>
+
+<section id="features" class="features reveal">
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1581276879432-15a19d654956" alt="">
-        <h3>Smooth Experience</h3>
-        <p>Clean interactions and user-friendly layout.</p>
+        <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546" alt="">
+        <h3>Elegant UI</h3>
+        <p>A refined interface designed for deluxe branding.</p>
     </div>
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1580894908361-967195033eef" alt="">
-        <h3>Mobile Adapted</h3>
-        <p>Designed to fit screens of all sizes.</p>
+        <img src="https://images.unsplash.com/photo-1590642918118-5c2d07e8de72" alt="">
+        <h3>Responsive Layouts</h3>
+        <p>Seamlessly adapts to all screen sizes and orientations.</p>
     </div>
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1580894732726-21f5d5e06c47" alt="">
-        <h3>Modular Components</h3>
-        <p>Easily customizable for future usage.</p>
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="">
+        <h3>Reusable Components</h3>
+        <p>Designed modularly for branding scalability.</p>
     </div>
 </section>
 
-<section id="contact" class="contact-section">
-    <h2>Contact Form</h2>
+<section id="stats" class="stats reveal">
+    <div class="stat-box">
+        <h2>12+</h2>
+        <p>Years of Experience</p>
+    </div>
+    <div class="stat-box">
+        <h2>150+</h2>
+        <p>Clients Worldwide</p>
+    </div>
+    <div class="stat-box">
+        <h2>50K+</h2>
+        <p>Users Reached</p>
+    </div>
+</section>
+
+<section class="testimonials reveal">
+    <h2>What Clients Say</h2>
+    <div class="test-grid">
+        <div class="test">
+            <p>"Incredible visual quality. The brand feels premium instantly."</p>
+            <span>- Victoria</span>
+        </div>
+        <div class="test">
+            <p>"Clean design and smooth animations. Great experience."</p>
+            <span>- Marcus</span>
+        </div>
+        <div class="test">
+            <p>"A reliable static showcase that looks like a million dollars."</p>
+            <span>- Angela</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact reveal">
+    <h2>Contact Us</h2>
     <form>
-        <input type="text" placeholder="Enter Name">
-        <input type="email" placeholder="Enter Email">
-        <button type="submit">Send Message</button>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="primary-btn">Send Message</button>
     </form>
 </section>
 
-<footer class="footer">
-    © 2026 THE EMPIRE — Showcase Website
+<footer class="footer reveal">
+    <div class="footer-cols">
+        <div>
+            <h3>Brand</h3>
+            <p>Premium web presentations built with style.</p>
+        </div>
+        <div>
+            <h3>Links</h3>
+            <a>Home</a><br>
+            <a>About</a><br>
+            <a>Features</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>info@theempire.com</p>
+        </div>
+    </div>
+    <p class="copy">© 2026 THE EMPIRE – All Rights Reserved</p>
 </footer>
 
-<button id="scrollTop" class="top-btn">↑</button>
+<button id="goTop" class="goTop">↑</button>
 
 <script src="script.js"></script>
 </body>
 </html>
-
