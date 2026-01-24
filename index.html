@@ -1,111 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE EMPIRE — Business Network</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>THE EMPIRE — Web Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-    <div class="logo">THE EMPIRE</div>
+<header class="site-header">
+    <div class="header-content">
+        <div class="brand">THE EMPIRE</div>
 
-    <nav class="nav" id="navMenu">
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
+        <nav id="navMenu" class="menu">
+            <a href="#home">Overview</a>
+            <a href="#features">Highlights</a>
+            <a href="#contact" class="cta-btn">Reach Us</a>
+        </nav>
 
-    <div class="hamburger" id="hamburgerBtn">
-      <span></span><span></span><span></span>
+        <div id="burger" class="burger">☰</div>
     </div>
-  </div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-  <h1>Empowering Global Business Networks</h1>
-  <p>We connect agencies, companies, and entrepreneurs through digital collaboration and strategic growth.</p>
-  <a class="btn-hero" href="#">Join Network</a>
+<section class="search-area">
+    <input type="text" placeholder="Type to search...">
+    <button>Go</button>
 </section>
 
-<!-- FEATURES -->
-<section class="features" id="features">
-  <h2>Why Choose Us?</h2>
-  <div class="features-grid">
-    <div class="feature-item">🌍 Global Partners</div>
-    <div class="feature-item">🤝 Strong Collaborations</div>
-    <div class="feature-item">📈 Growth Strategies</div>
-    <div class="feature-item">🧠 Industry Experts</div>
-  </div>
+<section id="home" class="hero-section">
+    <h1>Modern Static Showcase</h1>
+    <p>Web presentation built using HTML, CSS & JS</p>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-  <h2>What Our Clients Say</h2>
-
-  <div class="carousel">
-    <div class="carousel-track" id="carouselTrack">
-      <div class="card">“Amazing network! Helped us scale faster.”<br><span>- Nova Tech</span></div>
-      <div class="card">“Reliable partners & strong growth support.”<br><span>- Pixel Hive</span></div>
-      <div class="card">“A true global business ecosystem.”<br><span>- Orion Labs</span></div>
+<section id="features" class="features-grid">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1581276879432-15a19d654956" alt="">
+        <h3>Smooth Experience</h3>
+        <p>Clean interactions and user-friendly layout.</p>
     </div>
-  </div>
 
-  <div class="carousel-buttons">
-    <button id="prevBtn">‹</button>
-    <button id="nextBtn">›</button>
-  </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1580894908361-967195033eef" alt="">
+        <h3>Mobile Adapted</h3>
+        <p>Designed to fit screens of all sizes.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1580894732726-21f5d5e06c47" alt="">
+        <h3>Modular Components</h3>
+        <p>Easily customizable for future usage.</p>
+    </div>
 </section>
 
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <h2>Pricing Plans</h2>
-  <div class="pricing-grid">
-    <div class="pricing-card">
-      <h3>Starter</h3>
-      <p class="price">$19/mo</p>
-      <ul>
-        <li>Basic networking</li>
-        <li>Limited support</li>
-        <li>Community access</li>
-      </ul>
-      <a href="#" class="btn-pricing">Get Started</a>
-    </div>
-
-    <div class="pricing-card best">
-      <h3>Professional</h3>
-      <p class="price">$49/mo</p>
-      <ul>
-        <li>Extended collaboration</li>
-        <li>Premium connections</li>
-        <li>Priority support</li>
-      </ul>
-      <a href="#" class="btn-pricing">Choose Plan</a>
-    </div>
-
-    <div class="pricing-card">
-      <h3>Enterprise</h3>
-      <p class="price">$99/mo</p>
-      <ul>
-        <li>Dedicated assistance</li>
-        <li>Global partnerships</li>
-        <li>Market expansion</li>
-      </ul>
-      <a href="#" class="btn-pricing">Contact Us</a>
-    </div>
-  </div>
+<section id="contact" class="contact-section">
+    <h2>Contact Form</h2>
+    <form>
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer class="footer">
-  <p>© 2026 THE EMPIRE — All Rights Reserved.</p>
+    © 2026 THE EMPIRE — Showcase Website
 </footer>
+
+<button id="scrollTop" class="top-btn">↑</button>
 
 <script src="script.js"></script>
 </body>
 </html>
+
