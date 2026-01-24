@@ -1,67 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE EMPIRE - Global Business Network</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE EMPIRE — Business Network</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="header-wrapper">
-            <div class="logo">THE EMPIRE</div>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">THE EMPIRE</div>
 
-            <!-- NAVBAR -->
-            <nav class="navigation" id="navigation">
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Network</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
 
-            <!-- ACTION BUTTONS (DESKTOP) -->
-            <div class="action-buttons">
-                <a href="#" class="btn-login">Login</a>
-                <a href="#" class="btn-register">Register</a>
-            </div>
+    <div class="hamburger" id="hamburgerBtn">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
 
-            <!-- HAMBURGER -->
-            <div class="hamburger" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <h1>Empowering Global Business Networks</h1>
+  <p>We connect agencies, companies, and entrepreneurs through digital collaboration and strategic growth.</p>
+  <a class="btn-hero" href="#">Join Network</a>
+</section>
 
+<!-- FEATURES -->
+<section class="features" id="features">
+  <h2>Why Choose Us?</h2>
+  <div class="features-grid">
+    <div class="feature-item">🌍 Global Partners</div>
+    <div class="feature-item">🤝 Strong Collaborations</div>
+    <div class="feature-item">📈 Growth Strategies</div>
+    <div class="feature-item">🧠 Industry Experts</div>
+  </div>
+</section>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Empowering Global Business Networks</h1>
-        <p>We connect entrepreneurs, agencies, and companies across the world through digital collaboration.</p>
-        <a href="#" class="hero-btn">Join Network</a>
-    </section>
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <h2>What Our Clients Say</h2>
 
-    <!-- WHY CHOOSE US -->
-    <section class="features">
-        <h2>Why Choose THE EMPIRE?</h2>
-        <div class="feature-grid">
-            <div class="feature-box">🌍 Global Reach</div>
-            <div class="feature-box">🤝 Strong Partnerships</div>
-            <div class="feature-box">📈 Growth Support</div>
-            <div class="feature-box">🧠 Expert Advisors</div>
-        </div>
-    </section>
+  <div class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="card">“Amazing network! Helped us scale faster.”<br><span>- Nova Tech</span></div>
+      <div class="card">“Reliable partners & strong growth support.”<br><span>- Pixel Hive</span></div>
+      <div class="card">“A true global business ecosystem.”<br><span>- Orion Labs</span></div>
+    </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 THE EMPIRE — All Rights Reserved.</p>
-    </footer>
+  <div class="carousel-buttons">
+    <button id="prevBtn">‹</button>
+    <button id="nextBtn">›</button>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <h2>Pricing Plans</h2>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3>Starter</h3>
+      <p class="price">$19/mo</p>
+      <ul>
+        <li>Basic networking</li>
+        <li>Limited support</li>
+        <li>Community access</li>
+      </ul>
+      <a href="#" class="btn-pricing">Get Started</a>
+    </div>
+
+    <div class="pricing-card best">
+      <h3>Professional</h3>
+      <p class="price">$49/mo</p>
+      <ul>
+        <li>Extended collaboration</li>
+        <li>Premium connections</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="#" class="btn-pricing">Choose Plan</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Enterprise</h3>
+      <p class="price">$99/mo</p>
+      <ul>
+        <li>Dedicated assistance</li>
+        <li>Global partnerships</li>
+        <li>Market expansion</li>
+      </ul>
+      <a href="#" class="btn-pricing">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 THE EMPIRE — All Rights Reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
