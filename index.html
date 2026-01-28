@@ -78,20 +78,34 @@
 
     <!-- JS EMBEDDED HERE -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.getElementById('hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-            
-            document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                });
-            });
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    // Hamburger menu toggle
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    
+    // Close menu when clicking nav links
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
         });
+    });
+    
+    // "Get Started" button scrolls to Join Next Batch section
+    const getStartedBtn = document.querySelector('#hero button');
+    const contactSection = document.getElementById('contact');
+    
+    getStartedBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        contactSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
     </script>
 </body>
 </html>
